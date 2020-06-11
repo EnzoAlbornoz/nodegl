@@ -4,7 +4,7 @@ This project ports OpenGL C/C++ core calls to Node.JS using N-API.
 All callable functions present on `gl.h` are binded, including
 functions that depend on pointers or non-javascript sized variables
 as float, short and bytes.
-This was possible using the Buffer object of Node, that exports its
+This is possible by using the Buffer object of Node, that exports its
 data as an pointer, not like an JS normal object nor JS arrays (with getters).
 
 # Installing
@@ -25,7 +25,7 @@ yarn add nodegl
 # Usage
 
 This package focuses on have only OpenGL bindings , nothing as GLUT or GLFW are included, so you
-will need some context initializer for you. This example below uses a [GLFW port](https://github.com/Reon90/glfwJS) that appears on the ports list of the library's website.
+will need some context initializer for you. This example below uses a [GLFW port](https://github.com/Reon90/glfwJS) that appears on the ports list of the library website.
 
 ```javascript
 // Import Libs
@@ -93,7 +93,10 @@ async function main() {
 main();
 ```
 As the result of running the code above we have this :
-![Simple Example Result](./.github/images/simple-example.png)
+
+<p align="center">
+  <img width="400" src="./.github/images/simple-example.png" alt="Simple Example Result">
+</p>
 
 # License
 This package is licensed under MIT License. You can see more about it [here](./LICENSE.md)
