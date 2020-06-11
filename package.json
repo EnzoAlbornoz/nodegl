@@ -1,12 +1,12 @@
 {
 	"name": "nodegl",
-	"description": "Package that implements OpenGl 1.1 Spec",
+	"description": "OpenGl 1.1 Bindings for NodeJS",
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
 	"gypfile": true,
 	"scripts": {
-		"install": "prebuild-install || node-gyp rebuild",
+		"install": "cmake-js compile",
 		"build:prebuild": "prebuild --all -r napi --backend cmake-js"
 	},
 	"binary": {
