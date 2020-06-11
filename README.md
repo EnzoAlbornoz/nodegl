@@ -9,6 +9,10 @@ data as an pointer, not like an JS normal object nor JS arrays (with getters).
 
 # Installing
 
+> Warning: For now, the package cannot be downloaded because I'm disputing the 'nodegl' package name. Currently, this name is a reserved (squatted) package by another user. I already tried to contact the owner and submitted a dispute for NPM support review.
+>
+> When the dispute ends, I will publish this package for download on NPM, but in meanwhile you can download and build-it using the `build` script.
+<!--
 Using Npm:
 ```
 npm install nodegl
@@ -16,7 +20,7 @@ npm install nodegl
 Using Yarn:
 ```
 yarn add nodegl
-```
+``` -->
 
 # Usage
 
