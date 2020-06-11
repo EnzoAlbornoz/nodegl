@@ -37,11 +37,9 @@ Napi::Boolean _glAreTexturesResident(const Napi::CallbackInfo& info) {
 	// Load Params
 	GLsizei n = info[0].As<Napi::Number>().Int32Value();
 	const GLuint *textures = info[1].As<Napi::Buffer<unsigned int>>().Data();
-	GLboolean isResident;
+	GLboolean *isResident = info[2].As<Napi::Buffer<unsigned char>>().Data();
 	// Exec Function
-	GLboolean funcResult = glAreTexturesResident(n,textures,&isResident);
-	// Setup Param Out Values
-	info[2].As<Napi::Object>().Set<Napi::Boolean>("$",Napi::Boolean::New(env,isResident));
+	GLboolean funcResult = glAreTexturesResident(n,textures,isResident);
 	// Return Values
 	return Napi::Boolean::New(env,funcResult);
 }
