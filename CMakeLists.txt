@@ -8,7 +8,6 @@ execute_process(COMMAND node -p "require('node-addon-api').include"
         )
 string(REPLACE "\n" "" NODE_ADDON_API_DIR ${NODE_ADDON_API_DIR})
 string(REPLACE "\"" "" NODE_ADDON_API_DIR ${NODE_ADDON_API_DIR})
-set(NODE_INCLUDE $ENV{NVM_INC})
 # Name of the project (will be the name of the plugin)
 project(nodegl VERSION 0.1.0)
 # Build a shared library named after the project from the files in `src/`
@@ -27,7 +26,3 @@ target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB})
 target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES})
 # Gives our library file a .node extension without any "lib" prefix
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
-# # Define Package
-# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-# include(CPack)

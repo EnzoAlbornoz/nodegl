@@ -1,4 +1,5 @@
 #include <napi.h>
+#include "calls.hh"
 #include <GL/gl.h>
 
 // OPEN_GL 1.1 Function Bindings ==============================================

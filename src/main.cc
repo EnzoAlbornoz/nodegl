@@ -1,5 +1,5 @@
 #include <napi.h>
-#include "calls.cc"
+#include "calls.hh"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
 	// Setup Calls
