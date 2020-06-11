@@ -149,7 +149,7 @@ dist
 .pnp.*
 
 # VScode Settings
-.vscode/settings.json
+.vscode
 
 # Build Files
 build/
