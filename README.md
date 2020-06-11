@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="100" src="./.github/images/nodegl.png" alt="NodeGL Logo">
+</p>
+
 # NodeGL - OpenGL bindings for Node.JS
 
 This project ports OpenGL C/C++ core calls to Node.JS using N-API.
