@@ -5,17 +5,17 @@
 # NodeGL - OpenGL bindings for Node.JS
 
 This project ports OpenGL C/C++ core calls to Node.JS using N-API.
-All callable functions present on `gl.h` are binded, including
+All callable functions in `gl.h` are binded, including
 functions that depend on pointers or non-javascript sized variables
-as float, short and bytes.
-This is possible by using the Buffer object of Node, that exports its
-data as an pointer, not like an JS normal object nor JS arrays (with getters).
+such as float, short and byte.
+This is possible by using the Buffer object of Node, which exports its
+data as a pointer, unlike a normal JS object or JS arrays (with getters).
 
 # Installing
 
 > Warning: For now, the package cannot be downloaded because I'm disputing the 'nodegl' package name. Currently, this name is a reserved (squatted) package by another user. I already tried to contact the owner and submitted a dispute for NPM support review.
 >
-> When the dispute ends, I will publish this package for download on NPM, but in meanwhile you can download and build-it using the `build` script.
+> When the dispute is resolved, I will publish this package for download on NPM, meanwhile you can download and build it using the `build` script.
 <!--
 Using Npm:
 ```
@@ -28,8 +28,8 @@ yarn add nodegl
 
 # Usage
 
-This package focuses on have only OpenGL bindings , nothing as GLUT or GLFW are included, so you
-will need some context initializer for you. This example below uses a [GLFW port](https://github.com/Reon90/glfwJS) that appears on the ports list of the library website.
+This package focuses on having only OpenGL bindings, GLUT or GLFW are not included, so you
+will need some context initializer. The example below uses a [GLFW port](https://github.com/Reon90/glfwJS) that appears on the ports list of the library's website.
 
 ```javascript
 // Import Libs
@@ -96,7 +96,7 @@ async function main() {
 // Start
 main();
 ```
-As the result of running the code above we have this :
+Running the code above gives:
 
 <p align="center">
   <img width="400" src="./.github/images/simple-example.png" alt="Simple Example Result">
