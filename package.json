@@ -6,8 +6,8 @@
 	"license": "MIT",
 	"gypfile": true,
 	"scripts": {
-		"install": "cmake-js compile",
-		"build": "cmake-js build",
+		"install": "cmake-js build",
+		"build": "cmake-js compile",
 		"build:prebuild": "prebuild --all -r napi --backend cmake-js"
 	},
 	"binary": {

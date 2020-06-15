@@ -156,3 +156,6 @@ build/
 
 # Prebuild Files
 prebuild
+
+# Github Folder
+.github
