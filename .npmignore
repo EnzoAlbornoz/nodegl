@@ -159,3 +159,4 @@ prebuild
 
 # Github Folder
 .github
+!.github/images/*

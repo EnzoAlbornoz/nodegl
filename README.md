@@ -11,12 +11,16 @@ such as float, short and byte.
 This is possible by using the Buffer object of Node, which exports its
 data as a pointer, unlike a normal JS object or JS arrays (with getters).
 
+# Dependencies
+
+- Linux (For now, only linux headers are used on this project)
+- OpenGL Headers
+- CMake (Minimum v3)
+- GCC or Clang
+
 # Installing
 
-> Warning: For now, the package cannot be downloaded because I'm disputing the 'nodegl' package name. Currently, this name is a reserved (squatted) package by another user. I already tried to contact the owner and submitted a dispute for NPM support review.
->
-> When the dispute is resolved, I will publish this package for download on NPM, meanwhile you can download and build it using the `build` script.
-<!--
+
 Using Npm:
 ```
 npm install nodegl
@@ -24,7 +28,7 @@ npm install nodegl
 Using Yarn:
 ```
 yarn add nodegl
-``` -->
+```
 
 # Usage
 
