@@ -1,6 +1,10 @@
 #include <napi.h>
 #include "calls.hh"
+#if defined(__APPLE__)
+#include <OpenGL/gl.h>
+#else
 #include <GL/gl.h>
+#endif
 
 // OPEN_GL 1.1 Function Bindings ==============================================
 

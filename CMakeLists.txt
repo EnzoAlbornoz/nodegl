@@ -1,5 +1,7 @@
 # Define CMake version
 cmake_minimum_required(VERSION 3.0.0)
+set(CMAKE_CXX_STANDARD 11)
+
 # Define Variables
 # Include N-API wrappers
 execute_process(COMMAND node -p "require('node-addon-api').include"
