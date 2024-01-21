@@ -3,6 +3,10 @@
 #if defined(__APPLE__)
 #include <OpenGL/gl.h>
 #else
+#if defined(_WIN32)
+#define WINGDIAPI __declspec(dllimport)
+#define APIENTRY __stdcall
+#endif
 #include <GL/gl.h>
 #endif
 
