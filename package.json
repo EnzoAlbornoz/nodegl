@@ -1,7 +1,7 @@
 {
 	"name": "nodegl",
 	"description": "OpenGl 1.1 Bindings for NodeJS",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"main": "index.js",
 	"license": "MIT",
 	"gypfile": true,
