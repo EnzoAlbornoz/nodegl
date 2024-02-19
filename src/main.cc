@@ -121,6 +121,8 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
 	exports.Set(Napi::String::New(env, "glDeleteTextures"), Napi::Function::New(env, _glDeleteTextures));
 	// glDepthMask
 	exports.Set(Napi::String::New(env, "glDepthMask"), Napi::Function::New(env, _glDepthMask));
+	// glDepthFunc
+	exports.Set(Napi::String::New(env, "glDepthFunc"), Napi::Function::New(env, _glDepthFunc));
 	// glDepthRange
 	exports.Set(Napi::String::New(env, "glDepthRange"), Napi::Function::New(env, _glDepthRange));
 	// glEnable
